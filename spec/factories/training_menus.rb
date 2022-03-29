@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :training_menu do
-    spot { "MyString" }
-    menu { "MyString" }
-    content { "MyString" }
-    training_record { nil }
+    spot { "胸" }
+    menu { "ベンチプレス" }
+    content { Faker::Lorem.words }
+    association :training_record
   end
 end
